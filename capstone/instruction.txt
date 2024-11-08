@@ -1,0 +1,51 @@
+2. Price Optimisation Case study
+Optimizing retail prices is like finding the sweet spot between how much you charge for your products and how many people are willing to buy them at that price. The main goal is to set a price that not only brings in the most money but also draws in a good number of customers to purchase your products. This process includes using data and smart pricing strategies to figure out the perfect balance, ensuring you make the most sales and profits while keeping your customers satisfied.
+
+Dataset : https://drive.google.com/drive/folders/1cE2NGAJQIfhqT4h2I3TN8oCz08yIAhJG?usp=sharing
+
+Suggestions for approaching the case study:
+
+Start by thoroughly exploring the dataset, identifying key variables such as product attributes, customer behavior, and sales trends. Apply standard data preprocessing techniques to handle outliers, missing data, or duplicates.
+Leverage descriptive statistics and visualizations to gain insights into data distribution and relationships.
+Engineer new features such as Revenue and profit and profit margin for each prduct, time realted features such as isweekend, isholiday.
+Employ pricing models, to predict optimal prices based on factors like production costs, demand elasticity, and competitor pricing.
+Experiment with various pricing scenarios and assess their impact on revenue.
+Utilize insights from the dataset to formulate a theoretical optimal pricing strategy and determine the most suitable price for each product.
+Finally, select a pricing strategy aligned with business goals, considering market positioning, customer value perception, and profitability.
+Present the recommended optimal prices for each product, accompanied by a clear explanation of the chosen strategy, addressing the challenges outlined in the case study.
+Presentation Guidelines
+You have to create a presentation around the selected project
+The presentation needs to be somewhere between 5-8 slides and to be presented within 5 minutes.
+Add a slide introducing the project, then a few slides summarising the important observations from the analysis. (please add relevant plots/visualizations supporting your inference in the slides)
+Add a slide where based on your analysis, what would you recommend to the business stakeholders.
+Loom Video
+Please record yourself delivering your presentation, explaining it as if you are addressing stakeholders. Your goal should be to help them make informed decisions based on the insights and recommendations you provide.
+You may use the Loom video recording tool for this purpose. Here is the link: https://www.loom.com/
+Alternatively, you may use your web camera to record yourself while sharing your screen to showcase your presentation.
+Ensure that you are using the presentation you have prepared during your recording.
+Domain Portfolio Creation
+Please use the website https://www.datascienceportfol.io/ to create a portfolio that showcases the projects you have completed in this module.
+For further guidance, refer to this video: https://youtu.be/pafzoMuGWVs
+Add relevant GitHub and Tableau links making it easier to go through the actual project.
+Here's a reference of how it should be made: https://www.datascienceportfol.io/nishantlokhande
+Please add your projects on GitHub and Kaggle as well.
+Here's the reference on how it should be added on GitHub: https://github.com/aditya-shinde16/AerofitCaseStudy
+Please ensure that all the projects you have completed in this domain analytics module are included in your portfolio. Each project should be accompanied by proper links, a detailed description, and a clear outline of the skills utilized.
+This step is mandatory failure to complete it will result in losing your eligibility for the domain-specific certificate.
+Including projects from the Domain Analytics module in your portfolio is mandatory, but it would be beneficial if you also add other projects completed as part of the curriculum.
+Submissions
+The following links are mandatory for submission, as they will all be considered in the final evaluation process:
+Colab notebook containing the code
+Loom video link
+Presentation
+Portfolio link with the added projects
+Note:
+Please ensure that the links you share are set to "Anyone with the link can view" and are not private.
+The submission will be considered complete only upon the submission of all the required components outlined above.
+You may upload all the required files to your Google Drive and share the link.
+Note: Please ensure that the Drive link is set to "Anyone with the link can view."
+Note:
+No edits will be allowed once you submit your file.
+Please review carefully and submit only the final version.
+Re-submission requests via support will not be accepted.
+Any submission made after the deadline will not be considered.
