@@ -1,4 +1,4 @@
-2. Price Optimisation Case study
+2. Price Optimization Case study
 Optimizing retail prices is like finding the sweet spot between how much you charge for your products and how many people are willing to buy them at that price. The main goal is to set a price that not only brings in the most money but also draws in a good number of customers to purchase your products. This process includes using data and smart pricing strategies to figure out the perfect balance, ensuring you make the most sales and profits while keeping your customers satisfied.
 
 Dataset : https://drive.google.com/drive/folders/1cE2NGAJQIfhqT4h2I3TN8oCz08yIAhJG?usp=sharing
@@ -7,7 +7,7 @@ Suggestions for approaching the case study:
 
 Start by thoroughly exploring the dataset, identifying key variables such as product attributes, customer behavior, and sales trends. Apply standard data preprocessing techniques to handle outliers, missing data, or duplicates.
 Leverage descriptive statistics and visualizations to gain insights into data distribution and relationships.
-Engineer new features such as Revenue and profit and profit margin for each prduct, time realted features such as isweekend, isholiday.
+Engineer new features such as Revenue and profit and profit margin for each product, time related features such as isweekend, isholiday.
 Employ pricing models, to predict optimal prices based on factors like production costs, demand elasticity, and competitor pricing.
 Experiment with various pricing scenarios and assess their impact on revenue.
 Utilize insights from the dataset to formulate a theoretical optimal pricing strategy and determine the most suitable price for each product.
@@ -16,7 +16,7 @@ Present the recommended optimal prices for each product, accompanied by a clear 
 Presentation Guidelines
 You have to create a presentation around the selected project
 The presentation needs to be somewhere between 5-8 slides and to be presented within 5 minutes.
-Add a slide introducing the project, then a few slides summarising the important observations from the analysis. (please add relevant plots/visualizations supporting your inference in the slides)
+Add a slide introducing the project, then a few slides summarizing the important observations from the analysis. (please add relevant plots/visualizations supporting your inference in the slides)
 Add a slide where based on your analysis, what would you recommend to the business stakeholders.
 Loom Video
 Please record yourself delivering your presentation, explaining it as if you are addressing stakeholders. Your goal should be to help them make informed decisions based on the insights and recommendations you provide.
