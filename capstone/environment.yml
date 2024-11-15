@@ -1,0 +1,14 @@
+name: prophet
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10.12
+  - numpy=1.26.4
+  - pandas
+  - tabulate
+  - scikit-learn
+  - prophet
+  - matplotlib
+  - seaborn
+  - xgboost
