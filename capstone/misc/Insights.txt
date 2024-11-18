@@ -1,0 +1,37 @@
+Freight price is positively correlated with weight, total price is positively correlated with quantity, weekday and weekend are negatively correlated. These are quite self explanatory.
+
+lag_price is mildly positively correlated Revenue, Comp and total_price.
+product_score is positively correlated with comp_ps.
+
+Revenue peaked in 2017-11, freight_price and qty more or less stays same throughout.
+
+unit_price is always higher than comp price more closer to lag_price maybe more discounts can be given to attract more customers.
+
+Not much difference between mean weekday , weekend and holiday counts for year-month as well as month levels.
+
+health_beauty, watches_gifts and garden_tools are the categories that are very important.
+
+Popular products like health5, health2 , bed2 and health7 should be focused on to increase revenue.
+
+
+Similarly we can get prediction of Revenue or other required columns for all product_ids and plan accordingly.
+
+
+Using Regression method to predict the `total_price` and `qty` and `unit_price`.
+
+
+Use the models to predict prices and quantities based on the different parameters, the R^2 score is good so we can trust the models, also we can compare with some other baseline.
+
+{'subsample': 0.8999999999999999, 'reg_lambda': 0.8, 'reg_alpha': 0.8, 'n_estimators': 200, 'max_depth': 3, 'learning_rate': 0.9, 'gamma': 0.4, 'colsample_bytree': 0.8999999999999999}
+R^2 score for quantity is 0.8885279187878082
+Rmse for quantity is 3.854573933199853
+
+
+{'subsample': 0.8999999999999999, 'reg_lambda': 0.8, 'reg_alpha': 0.8, 'n_estimators': 200, 'max_depth': 3, 'learning_rate': 0.9, 'gamma': 0.4, 'colsample_bytree': 0.8999999999999999}
+R^2 score for total_price is 0.9979302303112106
+Rmse for total_price is 63.97622652853775
+
+
+{'subsample': 0.8999999999999999, 'reg_lambda': 0.8, 'reg_alpha': 0.8, 'n_estimators': 200, 'max_depth': 3, 'learning_rate': 0.9, 'gamma': 0.4, 'colsample_bytree': 0.8999999999999999}
+R^2 score for unit_price is 0.8433618568318304
+Rmse for unit_price is 28.00764712996934
