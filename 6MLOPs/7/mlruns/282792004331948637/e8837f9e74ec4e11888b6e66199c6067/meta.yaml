@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/architsharma/scaler_dsml/MLOPs%202/ML%20FLow/mlruns/282792004331948637/e8837f9e74ec4e11888b6e66199c6067/artifacts
+end_time: 1697300778982
+entry_point_name: ''
+experiment_id: '282792004331948637'
+lifecycle_stage: active
+run_id: e8837f9e74ec4e11888b6e66199c6067
+run_name: peaceful-fish-829
+run_uuid: e8837f9e74ec4e11888b6e66199c6067
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697300776230
+status: 3
+tags: []
+user_id: architsharma

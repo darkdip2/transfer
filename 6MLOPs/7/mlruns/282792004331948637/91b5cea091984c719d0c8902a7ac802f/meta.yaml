@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/architsharma/scaler_dsml/MLOPs%202/ML%20FLow/mlruns/282792004331948637/91b5cea091984c719d0c8902a7ac802f/artifacts
+end_time: 1697302130138
+entry_point_name: ''
+experiment_id: '282792004331948637'
+lifecycle_stage: active
+run_id: 91b5cea091984c719d0c8902a7ac802f
+run_name: KNN Model
+run_uuid: 91b5cea091984c719d0c8902a7ac802f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697302128030
+status: 3
+tags: []
+user_id: architsharma

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/architsharma/scaler_dsml/MLOPs%202/ML%20FLow/mlruns/282792004331948637/3bf82691288f458d974e642e4457b5ce/artifacts
+end_time: 1697301421539
+entry_point_name: ''
+experiment_id: '282792004331948637'
+lifecycle_stage: active
+run_id: 3bf82691288f458d974e642e4457b5ce
+run_name: Hyper param tuning 4
+run_uuid: 3bf82691288f458d974e642e4457b5ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697301420164
+status: 3
+tags: []
+user_id: architsharma

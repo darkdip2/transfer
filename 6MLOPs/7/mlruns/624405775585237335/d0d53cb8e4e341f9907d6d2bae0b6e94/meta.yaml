@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/architsharma/scaler_dsml/MLOPs%202/ML%20FLow/mlruns/624405775585237335/d0d53cb8e4e341f9907d6d2bae0b6e94/artifacts
+end_time: 1697299936118
+entry_point_name: ''
+experiment_id: '624405775585237335'
+lifecycle_stage: active
+run_id: d0d53cb8e4e341f9907d6d2bae0b6e94
+run_name: luxuriant-mouse-539
+run_uuid: d0d53cb8e4e341f9907d6d2bae0b6e94
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697299936049
+status: 3
+tags: []
+user_id: architsharma
