@@ -242,3 +242,59 @@ async def upload_video(file: UploadFile = File(...)):
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
+
+
+
+Please complete the Assignment before 4 PM tomorrow and share it with me in PDF format.
+
+Attached is a sample data file. 74368 rows of anonymized Data, set for the year 2052 for test purposes.
+
+Question - 1
+
+Test_Data_analysis.xlsx
+
+Can you prepare an analysis on a google spreadsheet and answer the following questions through data views -
+
+Which sleep phase (REM or Deep) shows higher variability across users? Please explain through data.
+What is the average steps done - classified by sleep mid-point for different users.
+How does stress levels vary based on early sleepers, late sleepers ( you can assume cutoff for early and late sleep.
+Which weekday had most average sleep recorded.
+Which user_id sleeps most and which user_id sleeps least.
+Question-2
+
+You are given a table named luna_daily_metrics with the following schema:
+
+luna_daily_metrics (
+
+user_id BIGINT,
+
+date DATE, 
+
+circadian_midpoint TIME, 
+
+avg_heart_rate INTEGER,
+
+master_avg_hrv INTEGER, 
+
+master_duration INTEGER,
+master_rem INTEGER, 
+
+master_deep INTEGER, 
+
+total_steps INTEGER, 
+
+total_calories INTEGER, 
+
+active_calories INTEGER, 
+
+stress_value INTEGER, 
+
+workout_count INTEGER 
+
+)
+
+Write a SQL query to identify the top 5 users with the highest average HRV over the past 7 days, only considering users who worked out at least 3 times in that period.
+
+
+
