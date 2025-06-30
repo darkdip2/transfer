@@ -297,7 +297,4 @@ workout_count INTEGER
 Write a SQL query to identify the top 5 users with the highest average HRV over the past 7 days, only considering users who worked out at least 3 times in that period.
 
 
-Hi Jim,
-I have decided to leave iOPEX as previously planned. I deeply regret any confusion or inconvenience my indecision may have caused. I am really grateful for all the opportunities I got here. It is no longer about the compensation so I will not be revoking my resignation. I know it might upset some people, but I had to make this decision. Let me know whatever needs to be done. I will prepare detailed documents on whatever I have worked on and will be available till Friday to give KTs.
-
 
