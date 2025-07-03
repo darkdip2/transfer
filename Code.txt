@@ -464,3 +464,71 @@ curl -X POST http://localhost:8080/predict -H "Content-Type: application/json" -
 
 
 
+
+
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import StandardScaler
+from scipy.stats import entropy
+import warnings
+warnings.filterwarnings('ignore')
+
+# Load your dataset (replace with your file path)
+# Assuming the dataset has columns like tof_1_v0 to tof_1_v63 for each sensor (tof_1 to tof_5)
+data = pd.read_csv('your_dataset.csv')
+
+# Function to extract features from 64 ToF pixel columns for a single sensor
+def extract_tof_features(tof_data, sensor_prefix):
+    features = {}
+    
+    # Normalize the 64 pixel values for the current sensor
+    scaler = StandardScaler()
+    normalized_data = scaler.fit_transform(tof_data.reshape(-1, 64))
+    
+    # Aggregate into single values per row
+    features[f'{sensor_prefix}_mean'] = np.mean(normalized_data, axis=1)
+    features[f'{sensor_prefix}_median'] = np.median(normalized_data, axis=1)
+    features[f'{sensor_prefix}_variance'] = np.var(normalized_data, axis=1)
+    features[f'{sensor_prefix}_max'] = np.max(normalized_data, axis=1)
+    features[f'{sensor_prefix}_min'] = np.min(normalized_data, axis=1)
+    features[f'{sensor_prefix}_range'] = features[f'{sensor_prefix}_max'] - features[f'{sensor_prefix}_min']
+    
+    # Centroid calculation (weighted average position)
+    pixel_indices = np.arange(64)
+    centroid = np.sum(pixel_indices * normalized_data, axis=1) / np.sum(normalized_data, axis=1)
+    features[f'{sensor_prefix}_centroid'] = centroid
+    
+    # Entropy calculation (randomness of pixel distribution)
+    # Ensure normalized_data is non-negative and sums to 1 for probability distribution
+    normalized_probs = normalized_data / np.sum(normalized_data, axis=1, keepdims=True)
+    features[f'{sensor_prefix}_entropy'] = entropy(normalized_probs.T)
+    
+    return features
+
+# Process each ToF sensor (tof_1 to tof_5)
+all_features = {}
+for sensor in range(1, 6):  # For tof_1 to tof_5
+    sensor_prefix = f'tof_{sensor}'
+    tof_columns = [f'{sensor_prefix}_v{i}' for i in range(64)]
+    
+    # Extract ToF data for the current sensor
+    tof_data = data[tof_columns].values
+    
+    # Handle missing values (if any)
+    tof_data = np.nan_to_num(tof_data, nan=0.0)
+    
+    # Extract features
+    sensor_features = extract_tof_features(tof_data, sensor_prefix)
+    all_features.update(sensor_features)
+
+# Convert features to DataFrame
+feature_df = pd.DataFrame(all_features)
+
+# Combine with original data or save as new dataset
+final_df = pd.concat([data, feature_df], axis=1)
+
+# Optional: Save the resulting DataFrame
+final_df.to_csv('feature_engineered_data.csv', index=False)
+
+print("Feature engineering completed. Check 'feature_engineered_data.csv' for results.")
+
